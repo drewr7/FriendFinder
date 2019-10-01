@@ -1,1 +1,9 @@
 # FriendFinder
+
+- My FriendFinder application displays a survey for users to answer a set of 10 statements. Each answer is graded on a scale of 1-5 based on how much the user agrees with the statement. When the user submits their survey we take their total grade and compare it with other users that are stored in an array. We then find the user that is closest in grade and display it back to the customer as the best match.
+
+- The app is organized by having all of the source code stored in the app folder. It is then broken up by the following folders data, public and routing. The data folder containts our friends.js file which stores the array of users. The public folder holds the html and css files and the routing folder containts the api and html routes of the application. We also have a package.json file that displays the applications dependencies and reposity information. Lastly, we have a server.js file that sets up our express and points the server to route files.
+
+- To run the app just use npm install to install the packages then in the terminal/command line window you will run "node server.js". You will then get a response in the terminal that the app is listening on port 3000. Therfore, you can navigate to your browser and go to http://localhost:3000 and view the homepage of the app. From the homepage you can select the Take Survey button. It will take you to the survey page which you can then answer the 10 questions and find the best friend match for you.
+
+- The technologies used to create this app were javascript to write the code. Node.js to run the application. I used Express to handle both API and HTML routing.

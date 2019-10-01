@@ -20,3 +20,13 @@ h3 {
 .logo{
     background-image: "../assets/FriendFinder.png"
 }
+
+#survey-button {
+    background-color: rgb(255, 115, 0);
+    border-color: white;
+}
+
+#small-button {
+    border-color: rgb(255, 115, 0);
+    color: rgb(255, 115, 0);
+}

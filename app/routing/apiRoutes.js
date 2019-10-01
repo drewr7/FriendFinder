@@ -2,7 +2,7 @@
 var friends = require("../data/friends")
 
 module.exports = function (app) {
-    // //api path to get the friends data, responds with a json object (an array of friends). Activated on both html pages with blue API Link
+    // //api path to get the friends data
     app.get('/api/friends', function (req,res) {
         res.json(friends);
     });
@@ -24,10 +24,9 @@ module.exports = function (app) {
             newFriend.scores[i] = parseInt(newFriend.scores[i]);
           }
         }
-        // compare the scores of newFriend with the scores of each friend in the database and find the friend with the smallest difference when each set of scores is compared
   
         var bestMatchIndex = 0;
-        //greatest score difference for a question is 4, therefore greatest difference is 4 times # of questions in survey
+        //greatest score difference is 40
         var bestMatchDifference = 40;
   
         for(var i = 0; i < friends.length; i++) {
